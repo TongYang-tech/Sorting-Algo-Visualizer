@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+Title: Sorting Visualizer
+Author: Tong Yang
+Email: tongyang80@yahoo.com
+Persons: none
+Online Sources: 
+https://www.w3schools.com/tags/tag_input.asp; Helped me learn how to use inputs
+https://css-tricks.com/css-grid-in-ie-debunking-common-ie-grid-misconceptions/; grid layout
+https://www.w3schools.com/cssref/css3_pr_mediaquery.asp; @media query
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport"
+              content="width=device-wdith, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+        <title>Algorithmic Sorting Visualizer</title>
+        <link rel="stylesheet" href="P03_SortingVisualizer.css">
+    </head>
+    <body>
+
+        <nav>
+            <div class="arrayBars">
+                <p>Array's size:</p>
+                <input id="arraySize" type="range" min=15 max=120 step=1 value=80>
+                <p>Algorithm's speed:</p>
+                <input id="algorithmSpeed" type="range" min =1 max =7 step=1 value=4>
+                <button id = "arrayGeneration">Generate a New Array</button>
+            </div>
+            <div class="Header">
+                <p class="navHeading">Sorting Visualizer</p>
+                <div class="algoButtons">
+                    <button>Insertion</button>
+                    <button>Selection</button>
+                    <button>Merge</button>
+                    <button>Bubble</button>
+                    <button>Quick</button>
+                    <button>Heap</button>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <section>
+                <div id="Info_Cont1">
+                </div>
+                <div id="array_container">
+                </div>
+                <div id="Info_Cont2">
+                </div>
+            </section>
+            <footer>
+            </footer>
+            <script src=""></script>
+            <script src=""></script>
+        </header>
+
+    </body>
+</html>
