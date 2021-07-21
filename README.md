@@ -4,8 +4,8 @@ An algorithmic sorting visualizer using HTML/CSS/Javascipt
 
 # What I learned
 
-- Mobile Web
+- Sorting Algorithms
 - DOM
-- FlexBox
+- Layouts
 - Basic Animations
 - Event Handling
