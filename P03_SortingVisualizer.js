@@ -10,27 +10,37 @@
  * 
  */
 let array_Size = document.getElementById('arraySize');
-let array_Speed = document.getElementById("algorithmSpeed");
-let gen_Array = document.getElementById("arrayGeneration");
 let numOfBar = array_Size.value;
-let algo_Buttons = document.querySelectorAll(".algoButtons button");
-var container = document.getElementById("arrayContainer");
-container.style="flex-direction:row";
-let divHeight = [];
-const divs = [];
-const marginSize = 5;
-var barStyle;
-gen_Array.addEventListener("click", arrayGeneration);
-array_Size.addEventListener("input", updateArraySize);
+let arr = [];
+
+array_Size.addEventListener('input', function(){
+    console.log(array_Size.value, typeof(array_Size.value));
+    arrayGeneration(parseInt(array_Size.value));
+});
+
+arrayGeneration();
 
 function arrayGeneration(){
-    container.innerHTML="";
-    for(var i = 0; i < numOfBar; i++){
-        divHeight.push(Math.floor(Math.random() * (array_Size.max - array_Size.min + 1) + array_Size.min));
-        divs[i] = document.createElement("div");
-        container.appendChild(divs[i]);
-        divs[i].style="margin: 0% 3px; width: 2px; height: 20px; background-color:pink; display: inline-block;";
+    updateBar();
+    arr = [];
+    for(var i = 0; i < numOfBar; i++) {
+        arr.push(Math.floor(Math.random() * (array_Size.max - array_Size.min + 1) + array_Size.min));
     }
+    console.log(arr);
+    const bars = document.querySelector("#bars");
+    for(var i = 0; i < numOfBar; i++) {
+        const bar = document.createElement("div");
+        bar.style.height = `${arr[i] * 1}px`;
+        bar.classList.add('bar');
+        bar.classList.add('flex-item');
+        bar.classList.add(`barNo${i}`);
+        bars.appendChild(bar);
+    }
+}
+
+function updateBar(){
+    const bar = document.querySelector("#bars");
+    bar.innerHTML = '';
 }
 
 function updateArraySize(){
