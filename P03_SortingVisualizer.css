@@ -1,4 +1,5 @@
-/*
+<!DOCTYPE html>
+<!--
 Title: Sorting Visualizer
 Author: Tong Yang
 Email: tongyang80@yahoo.com
@@ -7,90 +8,46 @@ Online Sources:
 https://www.w3schools.com/tags/tag_input.asp; Helped me learn how to use inputs
 https://css-tricks.com/css-grid-in-ie-debunking-common-ie-grid-misconceptions/; grid layout
 https://www.w3schools.com/cssref/css3_pr_mediaquery.asp; @media query
-*/
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+        <title>Visualizer</title>
+        <link rel="stylesheet" href="P03_SortingVisualizer.css">
+    </head>
+    <body>
 
-body{
-    margin: 0;
-}
+        <nav>
+            <div class="arrayBars">
+                <p>Change array's size:</p>
+                <input id="arraySize" type="range" min=10 max=700 step=1 value=80>
+                <p>Change algorithm's speed:</p>
+                <input id="algorithmSpeed" type="range" min =1 max =7 step=1 value=4>
+                <button id = "arrayGeneration">Generate random array</button>
+            </div>
+            <div class="Header">
+                <p class="navHeading">Sorting Visualizer</p>
+                <div class="algoButtons">
+                    <button>Insertion</button>
+                    <button>Selection</button>
+                    <button>Merge</button>
+                    <button>Bubble</button>
+                    <button>Quick</button>
+                    <button>Heap</button>
+                </div>
+            </div>
+        </nav>
 
-nav {
-    padding: 0% 10%;
-    color: tomato;
-    background-color: moccasin;
-    display: grid;
-    grid-template-columns: 60% 50%;
-    height: 150px;
-}
+        <header>
+            <section>
+                <div id="bars" class="arrayContainer"></div>
+            </section>
+            <footer>
+            </footer>
+            <script src="P03_SortingVisualizer.js"></script>
+        </header>
 
-nav .arrayBars {
-    display: grid;
-    grid-template-columns: 25% 25%;
-    margin-top: 25px;
-}
-
-nav #arrayGeneration {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-}
-
-nav .algoButtons {
-    margin-top: 15px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-nav .navHeading {
-    display: inline-block;
-    font-size: 40px;
-}
-
-nav button {
-    background-color: transparent;
-    border: none;
-    margin: 5% 0%;
-    padding: 15px;
-}
-nav button:hover {
-    color: white;
-    cursor: pointer;
-}
-
-section {
-    display: grid;
-    -ms-grid-columns: 20% 60% 20%;
-        grid-template-columns: 20% 60% 20%;
-  }
-  
-  section #Info_Cont1 {
-    padding: 20%;
-  }
-  
-  section #array_container {
-    display: flex;
-    width: 100%;
-    height: 70vh;
-  }
-  
-  section #Info_Cont2 {
-    padding: 20%;
-  }
-  
-  .hide {
-    display: none;
-  }
-
-/*@media (max-width: 480px){}
-@media (min-width: 481px) and (max-width: 1250px){}
-@media (min-width: 1251px){}
-*/
+    </body>
+</html>
