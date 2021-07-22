@@ -47,5 +47,3 @@ function updateArraySize(){
     numOfBar = array_Size.value;
     arrayGeneration();
 }
-
-window.onload = updateArraySize();
