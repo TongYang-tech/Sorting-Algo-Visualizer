@@ -4,9 +4,6 @@ Author: Tong Yang
 Email: tongyang80@yahoo.com
 Persons: none
 Online Sources: 
-https://www.w3schools.com/tags/tag_input.asp; Helped me learn how to use inputs
-https://css-tricks.com/css-grid-in-ie-debunking-common-ie-grid-misconceptions/; grid layout
-https://www.w3schools.com/cssref/css3_pr_mediaquery.asp; @media query
 */
 * {
     margin: 0px;
@@ -31,7 +28,7 @@ nav {
     height: 200px;
 }
 
-.arrayBars {
+.adjustments {
     display: grid;
     grid-template-columns: 35% 20%;
     margin-top: 10px;
@@ -76,13 +73,14 @@ button:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 1000px;
+    height: 200px;
     transition: 3s all ease;
 }
 
 .flex-item{
-    background: pink;
+    margin: 0 1px;
     border: 1pt solid black;
-    width: 15px;
+    background: grey;
+    width: 10px;
     transition: 0.1s all ease;
 }
