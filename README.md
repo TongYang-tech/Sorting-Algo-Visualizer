@@ -4,6 +4,6 @@ An algorithmic sorting visualizer using HTML/CSS/Javascipt to visualize how algo
 
 # What I learned
 
-- JavaScript(introductory)
+- Introduction to JavaScript
 - Sorting Algorithms
 - Web Application Development
