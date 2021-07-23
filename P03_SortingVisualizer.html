@@ -1,18 +1,15 @@
-<!DOCTYPE html>
 <!--
 Title: Sorting Visualizer
 Author: Tong Yang
 Email: tongyang80@yahoo.com
 Persons: none
 Online Sources: 
-https://www.w3schools.com/tags/tag_input.asp; Helped me learn how to use inputs
-https://css-tricks.com/css-grid-in-ie-debunking-common-ie-grid-misconceptions/; grid layout
-https://www.w3schools.com/cssref/css3_pr_mediaquery.asp; @media query
 -->
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
         <title>Visualizer</title>
         <link rel="stylesheet" href="P03_SortingVisualizer.css">
@@ -20,22 +17,22 @@ https://www.w3schools.com/cssref/css3_pr_mediaquery.asp; @media query
     <body>
 
         <nav>
-            <div class="arrayBars">
+            <div class="adjustments">
                 <p>Change array's size:</p>
                 <input id="arraySize" type="range" min=10 max=700 step=1 value=80>
                 <p>Change algorithm's speed:</p>
-                <input id="algorithmSpeed" type="range" min =1 max =7 step=1 value=4>
+                <input id="algorithmSpeed" type="range" min =20 max =300 stepDown=10 value=50>
                 <button id = "arrayGeneration">Generate random array</button>
             </div>
             <div class="Header">
                 <p class="navHeading">Sorting Visualizer</p>
                 <div class="algoButtons">
-                    <button>Insertion</button>
-                    <button>Selection</button>
-                    <button>Merge</button>
-                    <button>Bubble</button>
-                    <button>Quick</button>
-                    <button>Heap</button>
+                    <button class="Insert">Insertion</button>
+                    <button class="Select">Selection</button>
+                    <button class="Merge">Merge</button>
+                    <button class="Bubble">Bubble</button>
+                    <button class="Quick">Quick</button>
+                    <button class="Heap">Heap</button>
                 </div>
             </div>
         </nav>
@@ -47,6 +44,12 @@ https://www.w3schools.com/cssref/css3_pr_mediaquery.asp; @media query
             <footer>
             </footer>
             <script src="P03_SortingVisualizer.js"></script>
+            <script src="./SortingAlgorithms/heap.js"></script>
+            <script src="./SortingAlgorithms/insertion.js"></script>
+            <script src="./SortingAlgorithms/merge.js"></script>
+            <script src="./SortingAlgorithms/quick.js"></script>
+            <script src="./SortingAlgorithms/selection.js"></script>
+            <script src="./SortingAlgorithms/bubble.js"></script>
         </header>
 
     </body>
