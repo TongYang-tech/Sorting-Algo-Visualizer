@@ -24,5 +24,5 @@ bubbleSortButton.addEventListener('click', async function(){
     await bubble();
     enableButtons();
     enableSize();
-    enableArr()
+    enableArr();
 });
