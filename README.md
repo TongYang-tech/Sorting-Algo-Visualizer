@@ -15,3 +15,4 @@ An algorithmic sorting visualizer using HTML/CSS/Javascipt to visualize how algo
 - Web Application Development
   1) DOM (Document Object Model)
   2) Basic Event Handling
+- Basic UI
