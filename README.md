@@ -5,5 +5,11 @@ An algorithmic sorting visualizer using HTML/CSS/Javascipt to visualize how algo
 # What I learned
 
 - Introduction to JavaScript
-- Sorting Algorithms (quickSort/inerstionSort/selectionSort/bubbleSort/mergeSort/heapSort)
+- Sorting Algorithms
+  1) insertion sort
+  2) selection sort
+  3) merge sort
+  4) bubble sort
+  5) quick sort
+  6) heap sort
 - Web Application Development
