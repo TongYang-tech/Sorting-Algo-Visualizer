@@ -9,5 +9,5 @@ insertSortButton.addEventListener('click', async function(){
     await insertion();
     enableButtons();
     enableSize();
-    enableArr()
+    enableArr();
 });
