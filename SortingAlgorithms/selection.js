@@ -39,5 +39,5 @@ selectionButton.addEventListener('click', async function(){
     await selection();
     enableButtons();
     enableSize();
-    enableArr()
+    enableArr();
 });
