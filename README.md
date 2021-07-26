@@ -13,3 +13,5 @@ An algorithmic sorting visualizer using HTML/CSS/Javascipt to visualize how algo
   5) quick sort
   6) heap sort
 - Web Application Development
+  1) DOM (Document Object Model)
+  2) Basic Event Handling
